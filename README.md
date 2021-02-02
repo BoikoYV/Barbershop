@@ -1,5 +1,5 @@
 
- barbershop.github.io
+ https://boikoyv.github.io/barbershop/index.html
 
 ## **Верстка учебного сайта из нескольких страниц:**
 
