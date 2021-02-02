@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп Бородинский</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background-mp-wrapper">
+    <header class="header header-mp">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Информация</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Новости</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="price-list.html">Прайс-лист</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="header__user-nav-list">
+          <li class="header__user-nav-item">
+            <a class="header__user-nav-link" href="#">Вход</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+      <div class="header__logo--big">
+        <img class="header__logo-main" src="img/main-big-logo.svg" alt="Логотип Барбершопа Бородинский" height="155" width="371">
+      </div>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features__list">
+          <li class="features__list-item">
+            <h3 class="features__item-title title title3">Быстро</h3>
+            <p class="features__item-text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+          </li>
+          <li class="features__list-item">
+            <h3 class="features__item-title title title3">Круто</h3>
+            <p class="features__item-text">Забудьте, как вы стриглись раньше.<br>Мы сделаем из вас звезду футбола или кино!<br>Во всяком случае внешне.</p>
+          </li>
+          <li class="features__list-item">
+            <h3 class="features__item-title title title3">Дорого</h3>
+            <p class="features__item-text">Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+          </li>
+        </ul>
+      </section>
+      <div class="mp-white-section-wrapper--first mp-white-section-wrapper ">
+        <section class="news">
+          <h2 class="news__title title">Новости</h2>
+          <ul class="news__list">
+            <li class="news__list-item">
+              <p class="news__item-text">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+              <time class="news__item-date" datetime="2021-01-11">11 января</time>
+            </li>
+            <li class="news__list-item">
+              <p class="news__item-text">В нашей команде пополнение, Борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+              <time class="news__item-date" datetime="2021-01-18">18 января</time>
+            </li>
+          </ul>
+          <a class="news__btn button" href="#">Все новости</a>
+        </section>
+        <section class="gallery">
+          <h2 class="title gallery__title">Фотогалерея</h2>
+          <a class="gallery__photo-link" href="#">
+            <img class="gallery__photo" src="img/barbershop-galery.jpg" alt="Фото салона барбершопа" height="164" width="286">
+          </a>
+          <div class="gallery__buttons">
+            <button class="button gallery__btn btn-prev" type="button" name="button">Назад</button>
+            <button class="button gallery__btn btn-next" type="button" name="button">Вперед</button>
+          </div>
+        </section>
+      </div>
+      <div class="mp-white-section-wrapper">
+        <section class="contacts">
+          <h2 class="title contacts__title">Контактная информация</h2>
+          <p class="contacts__text contacts__adress">
+            Барбершоп «Бородинский»<br>
+            адрес: г. санкт-петербург, б. конюшенная, д. 19/8<br>
+            телефон: +7 (495) 666-02-66
+          </p>
+          <p class="contacts__text contacts__time">
+            Время работы:<br>
+            ПН—ПТ: С 10:00 до 22:00<br>
+            СБ—ВС: С 10:00 до 19:00
+          </p>
+          <div class="contacts__btn-group"><a class="button contacts__btn btn-map" href="#">Как проехать</a>
+          <a class="button contacts__btn btn-recall" href="#">Обратная связь</a></div>
+        </section>
+        <section class="booking">
+          <h2 class="title booking__title">Записаться</h2>
+          <p class="booking__text">
+            Укажите желаемую дату и время и мы свяжемся<br>с вами для подтверждения брони
+          </p>
+          <form class="booking__form" action="">
+            <p class="form-inner-wrapper">
+              <label class="booking__input-label" for="date">Дата</label>
+              <input class="booking__input input input-date" type="text" id="date" name="booking-date" placeholder="08.10.2017">
+            </p>
+            <p class="form-inner-wrapper">
+              <label class="booking__input-label" for="time">Время</label>
+              <input class="booking__input input input-time" type="text" id="time" name="booking-time" placeholder="10:00">
+            </p>
+            <p class="form-inner-wrapper">
+              <label class="booking__input-label" for="name">Ваше имя</label>
+              <input class="booking__input input input-name" type="text" id="name" name="booking-time" placeholder="Борода">
+            </p>
+            <p class="form-inner-wrapper">
+              <label class="booking__input-label" for="tel">Телефон</label>
+              <input class="booking__input input input-tel" type="tel" id="tel" name="booking-tel" placeholder="+7 123 456-78-90">
+            </p>
+            <button class="button button__form--lg button-lg" type="submit" name="button">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer mp-footer">
+      <div class="footer-inner">
+        <div class="footer__contacts">
+        <p class="footer__adress footer__text">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <a class="footer__adress-link footer__link " href="#">Как нас найти?</a><br>
+          Телефон: +7 (495) 666-02-66
+        </p>
+      </div>
+      <div class="footer__social">
+        <p class="footer__social-text footer__text">Давайте дружить!</p>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__btn footer__link" href="#">
+              <span class="visually-hidden  vk">Вконтакте</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15"  viewBox="0 0 26.14 14.91"><path d="M26 13.47l-.09-.17a13.55 13.55 0 0 0-2.6-3q-.87-.83-1.1-1.12A1 1 0 0 1 22 8a10.27 10.27 0 0 1 1.22-1.78l.88-1.16q2.35-3.13 2-4L26 .94a.8.8 0 0 0-.4-.22 2.14 2.14 0 0 0-.87 0h-3.92a.51.51 0 0 0-.27 0h-.3a.6.6 0 0 0-.15.14.93.93 0 0 0-.14.24 22.22 22.22 0 0 1-1.46 3.06q-.5.84-.93 1.46a7 7 0 0 1-.71.91 4.94 4.94 0 0 1-.52.47q-.23.18-.35.15l-.23-.05a.9.9 0 0 1-.31-.33 1.49 1.49 0 0 1-.16-.53V1.6a3.14 3.14 0 0 0 0-.62 2.12 2.12 0 0 0-.14-.44.73.73 0 0 0-.28-.33 1.57 1.57 0 0 0-.46-.18A9 9 0 0 0 12.57 0a8.93 8.93 0 0 0-3.25.33 1.83 1.83 0 0 0-.52.41q-.25.3-.07.33a1.67 1.67 0 0 1 1.16.59l.08.16a2.6 2.6 0 0 1 .19.63 6.32 6.32 0 0 1 .12 1 10.59 10.59 0 0 1 0 1.7q-.07.71-.13 1.1a2.21 2.21 0 0 1-.18.64 2.69 2.69 0 0 1-.16.3l-.07.07a1 1 0 0 1-.37.07.86.86 0 0 1-.46-.19 3.27 3.27 0 0 1-.56-.52 7 7 0 0 1-.66-.93q-.37-.6-.76-1.42l-.22-.39q-.2-.38-.56-1.11t-.62-1.43A.9.9 0 0 0 5.2.9h-.07a.93.93 0 0 0-.22-.16A1.44 1.44 0 0 0 4.6.65L.87.68A1 1 0 0 0 .1.94L0 1a.44.44 0 0 0 0 .22 1.08 1.08 0 0 0 .08.37Q.9 3.53 1.86 5.31t1.66 2.87Q4.23 9.27 5 10.24t1 1.24l.37.41.34.33a8.06 8.06 0 0 0 1 .78 16.34 16.34 0 0 0 1.4.9 7.6 7.6 0 0 0 1.79.72 6.19 6.19 0 0 0 2 .22h1.57a1.08 1.08 0 0 0 .72-.3l.05-.07a.9.9 0 0 0 .1-.25 1.38 1.38 0 0 0 0-.37 4.48 4.48 0 0 1 .09-1.05 2.77 2.77 0 0 1 .23-.71 1.74 1.74 0 0 1 .29-.4 1.19 1.19 0 0 1 .23-.2h.11a.86.86 0 0 1 .77.21 4.52 4.52 0 0 1 .83.79q.39.47.93 1.05a6.41 6.41 0 0 0 1 .87l.27.16a3.31 3.31 0 0 0 .71.3 1.53 1.53 0 0 0 .76.07l3.48-.05a1.58 1.58 0 0 0 .8-.17.68.68 0 0 0 .34-.37 1.06 1.06 0 0 0 0-.46 1.71 1.71 0 0 0-.1-.36z" fill="#fff"/></svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__btn footer__link" href="#"><span class="visually-hidden">Фейсбук</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__btn footer__link" href="#"><span class="visually-hidden">Инстаграм</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__dev">
+        <p class="footer__text footer__dev-text footer__social-text">Разработано:</p>
+        <a class="button footer__btn" href="#">HTMLAcademy</a>
+      </div>
+    </div>
+    </footer>
+  </div>
+  <!-- Модальное окно вход в личный кабинет -->
+  <section class="profile__login">
+    <div class="profile__login-inner">
+      <span class="cross"></span>
+      <h1 class="title profile__login-title">Личный кабинет</h1>
+      <p class="profile__text">Ведите пожалуйста свой логин и пароль</p>
+      <form class="profile-login-form" action="">
+        <p class="profile__input-wrapper login-svg">
+          <label class="visually-hidden" for="login">Логин</label>
+          <input class="profile__login-input input profile__input" type="text" name="login" placeholder="Логин" id="login">
+        </p>
+        <p class="profile__input-wrapper password-svg">
+          <label class="visually-hidden" for="password">Пароль</label>
+          <input class="profile__password-input input profile__input" type="password" name="password" placeholder="Пароль" id="password">
+        </p>
+        <p class="profile__help-wrapper">
+          <input class="checked-checkbox profile__checkbox" type="checkbox" name="remember-password" id="rem-password" checked>
+          <label class="rem-password" for="rem-password">Запомните меня</label>
+          <a class="profile__forgot-pass" href="#">Я забыл пароль</a>
+        </p>
+        <button class="button button-lg profile__button-login " type="submit">Войти</button>
+      </form>
+    </div>
+  </section>
+  <div class="modal__overlay"></div>
+
+  <!-- Модальное окно карта -->
+  <section class="map">
+    <h1 class="visually-hidden">Адрес Барбершопа Бородинский - Большая Конюшенная,19"</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7985.774021281412!2d30.306258148221644!3d59.974554110226904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sua!4v1612130746509!5m2!1sru!2sua" width="766" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <img class="map__img visually-hidden" src="img/modal-map.jpg" alt="Адрес Барбершопа Бородинский -  Большая Конюшенная, 19" height="560" width="766">
+    <span class="map-cross"></span>
+    <div class="modal_overlay"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
